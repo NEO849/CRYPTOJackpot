@@ -41,9 +41,14 @@
 ## Los gehts, Vorgehensweise:
 ### 1. viewBinding aktiviert
 
-### 2. 
+### 2. SplashScreen definieren und als Einstiegspunkt festlegen
 
-        * 
+        * SplashActivity als Startpunkt festlegen, im Androidmanifest den intent Filter vom MainActivity Abschnitt in den SplashActivity Abschnitt verschieben
+        * Von der SplashActivity zur MainActivity navigieren, in der SplashActivity einen Handler hinzufügen um nach einer kurzen Verzögerung zur MainActivity zu navigieren
+        * MainActivity als Host für Fragmente, einen FragmentContainerView hinzuzufügen, der als Host für die Fragmente dient
+        * In der MainActivity, wird der LoginFragment zum FragmentContainerView hinzugefügt, wenn die Activity zum ersten Mal erstellt wird
+
+### Mit diesen Schritten wird beim Start der App zuerst der SplashActivity angezeigt, der nach einer kurzen Verzögerung zur MainActivity navigiert, die dann den LoginFragment anzeigt.
 
 ### 3.
 
