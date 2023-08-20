@@ -50,11 +50,11 @@
 
 ### Mit diesen Schritten wird beim Start der App zuerst der SplashActivity angezeigt, der nach einer kurzen Verzögerung zur MainActivity navigiert, die dann den LoginFragment anzeigt.
 
-### 3.
+### 3.  Login und Register Fragmente und die dazugehörigen Layouts definieren und dann die Navigation in den Fragmenten implementieren
 
-        * 
+        * fragment_login.xml definieren und in der kt die Logik zum Anmelden/Registrieren, Passwort eingabe, Email Benutzername , etc...
 
-### 4.
+### 4. Welcome Fragment erstellen
 
         * 
 
