@@ -1,4 +1,5 @@
-## CRYPTO Jackpot - App 
+## CRYPTO Jackpot - App
+### Vielen Dank für die Bilder an:  <a href="https://de.freepik.com/search?format=search&last_filter=query&last_value=google&query=google&type=icon">Icon von Freepik</a>
 ### Dies ist eine Übungs App, in der ich mein erlerntes Wissen verfestigen möchte und mich an neuen Herausforderungen versuchen werde... Ich Werde viewBinding nutzen und versuchen nach der MVVM Architketur zu Programmieren und so gut wie möglich mein vorgehen Komentieren.
 
 ### Viel Spaß! 🤓

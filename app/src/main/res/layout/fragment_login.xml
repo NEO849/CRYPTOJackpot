@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Login"
-        android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,6 +40,109 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailLoginTIF"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/white"
+                app:startIconTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome2TV"
+                app:startIconDrawable="@drawable/baseline_email_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailLoginTEF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Email..." />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordLoginTIF"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/white"
+                app:startIconTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome2TV"
+                app:startIconDrawable="@drawable/baseline_security_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordLoginTEF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/forgetTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="right"
+                android:layout_marginTop="8dp"
+                android:text="Forget Password?" />
+
+            <Button
+                android:id="@+id/loginBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/btn_register_bg"
+                android:backgroundTint="@color/white"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorLink="@color/gray" />
+
+            <TextView
+                android:id="@+id/signTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Dont´t have an Account? Sign Up" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="center_horizontal">
+
+
+                <Button
+                    android:id="@+id/googleBTN"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Google"
+                    android:drawableLeft="@drawable/google" />
+
+                <Button
+                    android:id="@+id/facebookBTN"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:text="FB"
+                    android:drawableLeft="@drawable/facebook" />
+            </LinearLayout>
 
 
         </LinearLayout>

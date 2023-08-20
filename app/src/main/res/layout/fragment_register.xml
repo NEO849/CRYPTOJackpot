@@ -41,6 +41,89 @@
             android:orientation="vertical"
             android:padding="16dp">
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameTIF"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/white"
+                app:startIconTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome2TV"
+                app:startIconDrawable="@drawable/baseline_person_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usernameTEF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTIF"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/white"
+                app:startIconTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome2TV"
+                app:startIconDrawable="@drawable/baseline_email_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailTEF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTIF"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/white"
+                app:startIconTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome2TV"
+                app:startIconDrawable="@drawable/baseline_security_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordTEF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/registerBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/btn_register_bg"
+                android:backgroundTint="@color/white"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorLink="@color/gray" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="right"
+                android:layout_marginTop="8dp"
+                android:text="alreadyHaveanAccount?" />
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
