@@ -99,9 +99,16 @@
 
 ### 13. Auf String - Ressourcen verwiesen
 
-### 14. Anmelde/Register Logik implementieren
+### 14. Anmelde/Register Logik implementieren (mit Datenbindung und SharedPreferences simuliere ich den Login-Prozess)
 
-        I. Im Model Package, in der User Klasse die benötigten Attribute zum Anmelden und Registrieren setzen
+        I.   Im build.gradle(:app) das Dadabinding aktivieren
+        II.  Im Model Package, in der User Klasse die benötigten Attribute zum Anmelden und Registrieren setzen
+        III. DataBinding in fragment_login.xml aktivieren (Umschließen des gesamten Layout mit dem <layout>-Tag, um die ViewModel-Variable zu deklarieren wird der <data>-Block hinzugefügt)
+        IV.
+        V.
+        VI.
+        VII.
+        VIII.
 
 ### 15. 
 
