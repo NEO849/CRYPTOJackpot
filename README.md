@@ -55,29 +55,32 @@
 
         * fragment_login.xml definieren und in der kt die Logik zum Anmelden/Registrieren, Passwort eingabe, Email Benutzername , etc...
 
-### 4. Welcome Fragment erstellen
+### 4. build.gradle (Module: app) Datei, Abhängigkeiten hinzufügen:
 
-        * 
+        * navigation fragment und ui
 
-### 5.
+### 5. nav_graph in res/ erstellen
 
-        * 
+        * hier werden die aktionen zwischen den Fragmenten ertsellt
 
-### 6.
+### 6. activity_main.xml aktualisieren:
 
-        * 
+        * app:navGraph="@navigation/nav_graph" in den FragmentContainerView einfügen
+        * android:name="androidx.navigation.fragment.NavHostFragment"
 
-### 7.
+### 7. Navigation in LoginFragment Implementieren :
 
-        * 
+        * variable vom navController erstellen
+        * setOnClickListener auf die Buttons setzen 
 
-### 8.
+### 8. Navigation in RegisterFragment Implementieren :
 
-        * 
+        * variable vom navController erstellen
+        * setOnClickListener auf die Buttons setzen  
 
-### 9.
+### 9. Welcome Fragment erstellen, Layout und Logik
 
-        * 
+        * Navigation aktualisieren
 
 ### 10.
 
