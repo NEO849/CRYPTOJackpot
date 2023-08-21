@@ -4,55 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/registerCL"
     android:layout_width="match_parent"
-    android:background="@drawable/bluegradient"
     android:layout_height="match_parent"
+    android:background="@color/futuristic_background"
     tools:context=".ui.RegisterFragment" >
-
-    <TextView
-        android:id="@+id/registerTopTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Register"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/registerCV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        app:cardBackgroundColor="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/futuristic_background"
         app:cardElevation="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/registerTopTV"
-        app:layout_constraintStart_toStartOf="@+id/registerTopTV"
-        app:layout_constraintTop_toBottomOf="@+id/registerTopTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="@color/transparent">
 
-        <LinearLayout
-            android:id="@+id/registerLL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="16dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/registerCL2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/registerTopTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/usernameTIF"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
                 android:textColorHint="@color/white"
                 app:boxStrokeColor="@color/white"
-                app:startIconTint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/welcome2TV"
-                app:startIconDrawable="@drawable/baseline_person_24">
+                app:layout_constraintTop_toBottomOf="@+id/registerTopTV"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                app:startIconTint="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/usernameTEF"
@@ -69,11 +70,11 @@
                 android:layout_marginTop="32dp"
                 android:textColorHint="@color/white"
                 app:boxStrokeColor="@color/white"
-                app:startIconTint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/welcome2TV"
-                app:startIconDrawable="@drawable/baseline_email_24">
+                app:layout_constraintTop_toBottomOf="@+id/usernameTIF"
+                app:startIconDrawable="@drawable/baseline_email_24"
+                app:startIconTint="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/emailTEF"
@@ -84,20 +85,45 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/passwordTIF"
+                android:id="@+id/passwordIntputTIF"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
                 android:textColorHint="@color/white"
                 app:boxStrokeColor="@color/white"
-                app:startIconTint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/welcome2TV"
-                app:startIconDrawable="@drawable/baseline_security_24">
+                app:layout_constraintTop_toBottomOf="@+id/emailTIF"
+                app:startIconDrawable="@drawable/baseline_security_24"
+                app:startIconTint="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/passwordTEF"
+                    android:id="@+id/passwordInputTEF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordConformTIF"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordIntputTIF"
+                app:startIconDrawable="@drawable/baseline_security_24"
+                app:startIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordConformTEF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Password" />
@@ -106,24 +132,31 @@
 
             <Button
                 android:id="@+id/registerBTN"
-                android:layout_width="168dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
-                android:backgroundTint="@color/white"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/futuristic_primary"
                 android:text="Register"
-                android:textColor="@color/black"/>
+                android:textColor="@color/futuristic_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordConformTIF" />
 
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
+                android:id="@+id/alreadyHaveTV"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textColor="@color/red"
-                android:gravity="right"
                 android:layout_marginTop="8dp"
-                android:layout_marginRight="40dp"
-                android:text="already Have an Account?" />
+                android:layout_marginEnd="8dp"
+                android:text="already Have an Account?"
+                android:textColor="@color/red"
+                app:layout_constraintEnd_toEndOf="@+id/registerBTN"
+                app:layout_constraintTop_toBottomOf="@+id/registerBTN" />
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
@@ -132,7 +165,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:text="Version 1.0.1"
-        android:textColor="@color/gray"
+        android:textColor="@color/futuristic_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

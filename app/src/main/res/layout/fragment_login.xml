@@ -5,60 +5,54 @@
     android:id="@+id/loginCL"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bluegradient"
+    android:background="@color/futuristic_background"
     tools:context=".ui.LoginFragment">
-
-    <TextView
-        android:id="@+id/loginTopTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Login"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/loginCV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        app:cardBackgroundColor="@color/transparent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/futuristic_background"
         app:cardElevation="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/loginTopTV"
-        app:layout_constraintStart_toStartOf="@+id/loginTopTV"
-        app:layout_constraintTop_toBottomOf="@+id/loginTopTV"
+        app:layout_constraintBottom_toBottomOf="@+id/appVersionTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="@color/transparent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <LinearLayout
-            android:id="@+id/loginLL"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="16dp">
+            <TextView
+                android:id="@+id/loginTopTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Login"
+                android:textColor="@color/futuristic_text"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/usernameLoginTIF"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
                 android:textColorHint="@color/white"
                 app:boxStrokeColor="@color/white"
-                app:startIconTint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/welcome2TV"
-                app:startIconDrawable="@drawable/baseline_person_24">
+                app:layout_constraintTop_toBottomOf="@+id/loginTopTV"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                app:startIconTint="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/usernameTEF"
@@ -72,14 +66,16 @@
                 android:id="@+id/passwordLoginTIF"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
                 android:textColorHint="@color/white"
                 app:boxStrokeColor="@color/white"
-                app:startIconTint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/usernameLoginTIF"
-                app:startIconDrawable="@drawable/baseline_security_24">
+                app:startIconDrawable="@drawable/baseline_security_24"
+                app:startIconTint="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/passwordLoginTEF"
@@ -94,6 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
                 android:text="Forget Password?"
                 android:textColor="@color/red"
                 app:layout_constraintEnd_toEndOf="@+id/passwordLoginTIF"
@@ -101,85 +98,69 @@
 
             <Button
                 android:id="@+id/loginBT"
-                android:layout_width="168dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="56dp"
+                android:backgroundTint="@color/futuristic_primary"
                 android:text="Login"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
+                android:textColor="@color/futuristic_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/forgetTV" />
+                app:layout_constraintTop_toBottomOf="@+id/passwordLoginTIF" />
 
-            <LinearLayout
-                android:id="@+id/registerLL"
-                android:layout_width="match_parent"
+
+            <TextView
+                android:id="@+id/accountTV"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                app:layout_constraintTop_toBottomOf="@+id/loginBT"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:text="Dont´t have an Account?"
+                android:textColor="@color/futuristic_text"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/registerKlickTV"
+                app:layout_constraintTop_toBottomOf="@+id/loginBT" />
 
-                <TextView
-                    android:id="@+id/accountTV"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textColor="@color/white"
-                    android:gravity="center"
-                    android:text="Dont´t have an Account?"
-                    android:layout_gravity="center_vertical" />
+            <TextView
+                android:id="@+id/registerKlickTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Register"
+                android:textColor="@color/red"
+                app:layout_constraintEnd_toEndOf="@+id/loginBT"
+                app:layout_constraintTop_toBottomOf="@+id/loginBT" />
 
-                <TextView
-                    android:id="@+id/registerKlickTV"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textColor="@color/red"
-                    android:gravity="center"
-                    android:text="Register"
-                    android:layout_gravity="center_vertical" />
+            <Button
+                android:id="@+id/googleBTN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/futuristic_primary"
+                android:drawableLeft="@drawable/google"
+                android:text="Google"
+                android:textColor="@color/futuristic_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/loginBT"
+                app:layout_constraintTop_toTopOf="@+id/accountTV" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:weightSum="2"
-                android:gravity="center_horizontal">
-
-
-                <Button
-                    android:id="@+id/googleBTN"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="8dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/white"
-                    android:text="Google"
-                    android:drawableLeft="@drawable/google" />
-
-                <Button
-                    android:id="@+id/facebookBTN"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="8dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/white"
-                    android:text="Facebook"
-                    android:drawableLeft="@drawable/facebook" />
-            </LinearLayout>
+            <Button
+                android:id="@+id/facebookBTN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/futuristic_primary"
+                android:drawableLeft="@drawable/facebook"
+                android:text="Facebook"
+                android:textColor="@color/futuristic_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/loginBT"
+                app:layout_constraintTop_toTopOf="@+id/accountTV" />
 
 
-        </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -189,7 +170,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:text="Version 1.0.1"
-        android:textColor="@color/gray"
+        android:textColor="@color/futuristic_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

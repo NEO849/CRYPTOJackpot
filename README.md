@@ -81,8 +81,41 @@
 
 ### 9. Welcome Fragment erstellen, Layout und Logik
 
-        * Navigation aktualisieren
+        * Navigation aktualisieren, im nav_graph.xml die aktionen zwischen den Fragmenten festlegen
 
-### 10.
+### 10. Theme der App und Tag/Nacht- Modus implementieren (ich werde zu Übungszwecken zwei Themes setzen, um dann zwischen Ihnen zu wechseln)
+
+        * in der Colors.xml die Farben definieren
+        * in Styles.xml das App-Theme anpassen
+        * in res/values neue colors-night.xml Datei erstellen, hier werden die Farben für den Nachtmodus definiert
+        * im Androidmanifest.xml die AppTheme Datei verwenden
+        * um die separate Themes zu setzen, in Styles.xml die seperaten Themes definieren
+
+### 11. Theme in der App wechseln
+
+        * Um das Theme zu wechseln, verwendet man die setTheme() Methode vor dem setContentView() Aufruf in der MainActivity 
+        * Die setTheme() Methode kann verwendet werden um dynamisch zwischen den verschiedenen Themes zu wechseln
+
+### 12. 
+
+        * 
+
+### 13. 
+
+        * 
+
+### 14. 
+
+        * 
+
+### 15. 
+
+        * 
+
+### 16. 
+
+        * 
+
+### 17. 
 
         * 

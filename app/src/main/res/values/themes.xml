@@ -6,4 +6,29 @@
     </style>
 
     <style name="Theme.CRYPTOJackpot" parent="Base.Theme.CRYPTOJackpot" />
+
+    <!-- Elegant & Luxurious Theme -->
+    <style name="Theme.CRYPTOJackpot.Elegant">
+        <item name="colorPrimary">@color/elegant_primary</item>
+        <item name="colorAccent">@color/elegant_accent</item>
+        <item name="android:windowBackground">@color/elegant_background</item>
+        <item name="android:textColor">@color/elegant_text</item>
+    </style>
+
+    <!-- Modern & Minimalistic Theme -->
+    <style name="Theme.CRYPTOJackpot.Modern">
+        <item name="colorPrimary">@color/modern_primary</item>
+        <item name="colorAccent">@color/modern_accent</item>
+        <item name="android:windowBackground">@color/modern_background</item>
+        <item name="android:textColor">@color/modern_text</item>
+    </style>
+
+    <!-- Futuristic & Technological Theme -->
+    <style name="Theme.CRYPTOJackpot.Futuristic">
+        <item name="colorPrimary">@color/futuristic_primary</item>
+        <item name="colorAccent">@color/futuristic_accent</item>
+        <item name="android:windowBackground">@color/futuristic_background</item>
+        <item name="android:textColor">@color/futuristic_text</item>
+    </style>
+
 </resources>

@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CRYPTOJackpot"
+        android:theme="@style/Theme.CRYPTOJackpot.Futuristic"
         tools:targetApi="31">
 
         <!-- SplashActivity als den Haupt-Einstiegspunkt festlegen -->
