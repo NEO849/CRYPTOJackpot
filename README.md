@@ -63,10 +63,11 @@
 
         * hier werden die aktionen zwischen den Fragmenten ertsellt
 
-### 6. activity_main.xml aktualisieren:
+### 6. activity_main.xml und .kt aktualisieren:
 
         * app:navGraph="@navigation/nav_graph" in den FragmentContainerView einfügen
         * android:name="androidx.navigation.fragment.NavHostFragment"
+        * den Code der das LoginFragment manuel hinzufügt entfernen, da der NavHostFragment dies bereits tut
 
 ### 7. Navigation in LoginFragment Implementieren :
 
