@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Register"
+                android:text="@string/text_register"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold"
@@ -59,7 +59,7 @@
                     android:id="@+id/usernameTEF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Username" />
+                    android:hint="@string/textInput_username" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,7 +80,7 @@
                     android:id="@+id/emailTEF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email" />
+                    android:hint="@string/textInput_email" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -103,7 +103,7 @@
                     android:id="@+id/passwordInputTEF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Password" />
+                    android:hint="@string/textInput_password" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -126,7 +126,7 @@
                     android:id="@+id/passwordConformTEF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Password" />
+                    android:hint="@string/textInput_password" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -138,7 +138,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="@color/futuristic_primary"
-                android:text="Register"
+                android:text="@string/button_register"
                 android:textColor="@color/futuristic_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -149,10 +149,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:text="already Have an Account?"
-                android:textColor="@color/red"
+                android:text="@string/text_accountAlready"
+                android:gravity="center"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="@+id/registerBTN"
+                app:layout_constraintStart_toStartOf="@+id/registerBTN"
                 app:layout_constraintTop_toBottomOf="@+id/registerBTN" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -164,7 +165,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-        android:text="Version 1.0.1"
+        android:text="@string/text_appversion"
         android:textColor="@color/futuristic_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

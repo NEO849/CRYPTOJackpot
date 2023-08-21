@@ -15,7 +15,7 @@
         android:gravity="center"
         android:background="@color/futuristic_background"
         android:textColor="@color/futuristic_text"
-        android:text="Welcomescreen"
+        android:text="@string/text_welcome"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

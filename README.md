@@ -9,11 +9,11 @@
     * splash: Für den Splash-Screen.
     * login: Für den Login-Screen.
     * register: Für den Register-Screen.
-    * viewmodel: Beherbergt alle ViewModels.
-    * model: Für Datenmodelle und Datenquellen.
-    * repository: Enthält den Datenzugriffscode und die Geschäftslogik.
+    * viewmodel: Beherbergt alle ViewModels, (LoginViewModel, RegisterViewModel) enthält die UI-bezogene Datenlogik
+    * model: Für Datenmodelle und Datenquellen, (User) enthält die Daten
+    * repository: Enthält den Datenzugriffscode und die Geschäftslogik,  (UserRepository) ist verantwortlich für den Datenzugriff
 
-### Implementierung, UI:
+### Implementierung, UI (LoginFragment, RegisterFragment) repräsentiert die Benutzeroberfläche und verwendet Data Binding, um die UI-Elemente an den ViewModel zu binden:
     * SplashScreen: Eine SplashActivity sollte im ui.splash Paket erstellt werden. Diese Aktivität zeigt den Splash-Screen und navigiert dann zur Hauptaktivität.
     * LoginFragment: Ein Fragment sollte im ui.login Paket erstellt werden, das die Login-Oberfläche anzeigt.
     * RegisterFragment: Ein Fragment sollte im ui.register Paket erstellt werden, das die Registrierungsoberfläche anzeigt.
@@ -95,17 +95,13 @@
 
         * (optional, wenn Darkmodus implementiert wird, später) In der Hauptaktivität kann man den Dunkelmodus basierend auf den Benutzereinstellungen oder einem Schalter in der App aktivieren
 
-### 12. 
+### 12. In der SplashActivity.kt die Progressbar definiert
 
-        * 
+### 13. Auf String - Ressourcen verwiesen
 
-### 13. 
+### 14. Anmelde/Register Logik implementieren
 
-        * 
-
-### 14. 
-
-        * 
+        I. Im Model Package, in der User Klasse die benötigten Attribute zum Anmelden und Registrieren setzen
 
 ### 15. 
 
