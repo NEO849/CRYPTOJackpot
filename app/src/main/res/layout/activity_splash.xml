@@ -13,19 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
         android:text="Crypto Lotterie"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/appLogoIV"
         app:layout_constraintEnd_toEndOf="@+id/appLogoIV"
         app:layout_constraintStart_toStartOf="@+id/appLogoIV" />
-
-    <ProgressBar
-        android:id="@+id/splashPB"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/appLogoIV"
-        app:layout_constraintStart_toStartOf="@+id/appLogoIV"
-        app:layout_constraintTop_toBottomOf="@+id/appLogoIV" />
 
     <ImageView
         android:id="@+id/appLogoIV"
@@ -37,6 +28,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <ProgressBar
+        android:id="@+id/splashPB"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/appLogoIV"
+        app:layout_constraintStart_toStartOf="@+id/appLogoIV"
+        app:layout_constraintTop_toBottomOf="@+id/appLogoIV" />
 
     <LinearLayout
         android:id="@+id/directedByLL"
